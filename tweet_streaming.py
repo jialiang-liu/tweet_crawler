@@ -30,4 +30,5 @@ if __name__ == '__main__':
     listener = StdOutListener()
     path = os.path.dirname(__file__)
     stream = Stream(auth, listener)
-    stream.filter(track=['trump', 'Trump'])
+    #stream.filter(track=['trump', 'Trump'])
+    stream.sample()
